@@ -1,19 +1,19 @@
 # react-demo
 dash.js player instructions for remote playback
-<br />
+<br>
 This app is based on dash.js, it solves the jumpGaps bug for remote-playback videos
-<br />
-<br />
+<br>
+<br>
 To start app run this script
-<br />
+<br>
 ```
 npm run dev
 ```
 <br />
 <br />
-Create url variable, which will be updated in Input after loading typed Url.\
+Create url variable, which will be updated in Input after loading typed Url.  
 Pass it as props to Video component 
-\
+<br>
 ```
   const App = () => { 
     const [url, setUrl] = useState("")
@@ -24,22 +24,22 @@ Pass it as props to Video component
     )
   };`;
 ```
-\
-\
+<br>
+<br>
 Import [dash.js](https://www.npmjs.com/package/dashjs) node package to your Video component
-<br />
-<br />
+<br>
+<br>
 Create new player in your video's component
-<br />
+<br>
 ```
   const VideoPlayer = ({url}) => {
 
       const player = dashjs.MediaPlayer().create();`;
 ```
-<br />
-<br />
+<br>
+<br>
 Add useEffect hook and attach listener on comming prop's url property
-<br />
+<br>
 ```
   const VideoPlayer = ({url}) => {
 
@@ -49,10 +49,10 @@ Add useEffect hook and attach listener on comming prop's url property
 
   [url]);"`;
 ```
-<br />
-<br />
+<br>
+<br>
 As forth argument of player.initialize() method code "0", so the video playback video will be playing from 0:00 start time, without
-<br />
+<br>
 ```
   const VideoPlayer = ({url}) => {
 
@@ -62,4 +62,4 @@ As forth argument of player.initialize() method code "0", so the video playback 
 
   [url]);"`;
 ```
-<br />
+<br>
