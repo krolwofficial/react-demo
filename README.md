@@ -11,9 +11,9 @@ npm run dev
 ```
 <br />
 <br />
-Create url variable, which will be updated in Input after loading typed Url.
+Create url variable, which will be updated in Input after loading typed Url.\
 Pass it as props to Video component 
-<br />
+\
 ```
   const App = () => { 
     const [url, setUrl] = useState("")
@@ -24,8 +24,8 @@ Pass it as props to Video component
     )
   };`;
 ```
-<br />
-<br />
+\
+\
 Import [dash.js](https://www.npmjs.com/package/dashjs) node package to your Video component
 <br />
 <br />
