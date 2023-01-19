@@ -9,8 +9,8 @@ To start app run this script
 ```
 npm run dev
 ```
-<br />
-<br />
+<br >
+<br >
 Create url variable, which will be updated in Input after loading typed Url.  
 Pass it as props to Video component 
 <br>
